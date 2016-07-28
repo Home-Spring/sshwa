@@ -34,9 +34,9 @@ public class App {
 		return "index";
 	}
 
-    @RequestMapping(value = "/logout/logout", method = RequestMethod.GET)
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
     public String logout() {
-        return "logout/logout";
+        return "logout";
     }
 
     @RequestMapping(value = "/login/", method = RequestMethod.GET)
