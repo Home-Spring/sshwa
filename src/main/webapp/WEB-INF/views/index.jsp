@@ -18,6 +18,6 @@
             <h2>${pageContext.request.userPrincipal.name} | <a href="<c:url value="/logout"/>">Logout</a></h2>
         </sec:authorize>
 
-        <div><spring:url value="/admin/" var="adminUrl" /> <a href="${adminUrl}" title="Admin">Admin</a> resource for <b>admin</b></div>
+        <div><spring:url value="/protected/" var="protectedUrl" /> <a href="${protectedUrl}" title="protected">protected</a> resource for <b>admin</b></div>
     </body>
 </html>

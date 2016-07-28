@@ -26,11 +26,9 @@ public class App {
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! the client locale is "+ locale.toString());
 		
-		Date date = new Date();
+		Date             date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
+		String  formattedDate = dateFormat.format(date);
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "index";
@@ -46,9 +44,9 @@ public class App {
         return "login";
     }
 
-    @RequestMapping(value = "/admin/", method = RequestMethod.GET)
-    public String admin() {
-        return "admin";
+    @RequestMapping(value = "/protected/", method = RequestMethod.GET)
+    public String protect() {
+        return "protected";
     }
 	
 }
