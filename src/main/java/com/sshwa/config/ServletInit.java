@@ -1,9 +1,9 @@
-package com.elennaro.sshwa.config;
+package com.sshwa.config;
 
-import com.elennaro.sshwa.config.application.WebConfig;
+import com.sshwa.config.application.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
+public class ServletInit extends AbstractAnnotationConfigDispatcherServletInitializer{
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
@@ -19,5 +19,5 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 	protected String[] getServletMappings() {
 		return new String[] {"/"};
 	}
-	
+
 }

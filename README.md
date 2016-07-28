@@ -1,7 +1,8 @@
 Spring Security Hello World Java Config Tutorial
 =====
 
-This is Spring Security Hello Word Java Config tutorial.
+* `habrahabr 226791` [This is Spring Security Hello Word Java Config tutorial](https://habrahabr.ru/post/226791/)
+* [localhost:8081/sshwa](http://localhost:8081/sshwa/)
 
 ##Technologies used
 
@@ -12,5 +13,3 @@ This is Spring Security Hello Word Java Config tutorial.
 * Tomcat 8
 * Servlet Api 3.1
 * Java 1.8
-
-TODO: Write something
