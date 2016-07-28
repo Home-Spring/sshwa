@@ -21,7 +21,7 @@ public class LogoutSuccess extends SimpleUrlLogoutSuccessHandler{
         if (principal instanceof User) {
             User user = (User) principal;
             if( user.getUsername().equals("user") )
-                response.sendRedirect( request.getContextPath() + "/logout/user" );
+                response.sendRedirect( request.getContextPath() + "/logout/logout" );
         }
         response.sendRedirect(  request.getContextPath() + "/" );
     }
