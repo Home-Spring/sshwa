@@ -12,18 +12,17 @@ public class App {
     @RequestMapping(value = {"/"}, method = {RequestMethod.GET})
     public ModelAndView welcomePage() {
         ModelAndView model = new ModelAndView();
-        model.setViewName("public");
+        model.setViewName("index");
 
         return model;
     }
 
     // user
-    @RequestMapping(value = {"/public**"}, method = {RequestMethod.GET}) //@RequestMapping(value = {"/", "/public**"}, method = {RequestMethod.GET})
+    @RequestMapping(value = {"/index**"}, method = {RequestMethod.GET}) //@RequestMapping(value = {"/", "/public**"}, method = {RequestMethod.GET})
 	public ModelAndView publicPage() {
 		ModelAndView model = new ModelAndView();
-		model.addObject("title", "Spring Security 3.2.4 Tutorial");
 		model.addObject("message", "This is public page - Only for 'User' Role!");
-		model.setViewName("public");
+		model.setViewName("index");
 
 		return model;
 	}
@@ -32,7 +31,6 @@ public class App {
 	@RequestMapping(value = "/protected**", method = RequestMethod.GET)
 	public ModelAndView protectedPage() {
 		ModelAndView model = new ModelAndView();
-		model.addObject("title", "Spring Security 3.2.4 Tutorial");
 		model.addObject("message", "This is protected page - Need 'Admin' Role!");
 		model.setViewName("protected");
 
@@ -43,7 +41,6 @@ public class App {
 	@RequestMapping(value = "/confidential**", method = RequestMethod.GET)
 	public ModelAndView adminPage() {
 		ModelAndView model = new ModelAndView();
-		model.addObject("title", "Spring Security 3.2.4 Tutorial");
 		model.addObject("message", "This is confidential page - Need 'SuperAdmin' Role!");
 		model.setViewName("protected");
 
