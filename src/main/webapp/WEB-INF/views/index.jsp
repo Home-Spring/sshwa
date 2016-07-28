@@ -10,6 +10,9 @@
 
     <body>
         <h3>Spring Security 3.2.4 Tutorial</h3>
+        <sec:authorize access="isAuthenticated()">
+            <h3>This is public page - Only for 'User' Role!</h3>
+        </sec:authorize>
 
         <sec:authorize access="isAnonymous()">
             <h2><spring:url value="/login/" var="loginUrl" /> <a href="${loginUrl}" title="Login">Login</a></h2>

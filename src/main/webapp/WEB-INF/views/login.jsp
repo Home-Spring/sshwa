@@ -8,5 +8,6 @@
 
     <body>
         <h1>Login is Success!</h1>
+        <div><a href="/">../</a></div>
     </body>
 </html>
